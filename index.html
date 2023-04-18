@@ -14,20 +14,21 @@
             <h1>Gerador de Senhas</h1>
         </div>
         <div id="principal">
-            <div id="tamanho">
-                <p><label for="range">Quantidade de Caracteres:</label></p>
-                <p>
-                    <input type="range" name="range" id="range" class="range" step="1" min="1" max="25" value="10" oninput="valor.innerHTML = Number(range.value)">
-                    <output id="valor">10</output>
-                </p>
-            </div>
-            <button>Gerar Senha</button>
+                <div id="tamanho">
+                    <p><label for="range">Quantidade de Caracteres:</label></p>
+                    <p>
+                        <input type="range" name="range" id="range" class="range" step="1" min="1" max="25" value="10" oninput="valor.innerHTML = Number(range.value)">
+                        <output id="valor">10</output>
+                    </p>
+                </div>
+                <button id="botao">Gerar Senha</button>
             <div id="resultado">
-                <p id="senha">XXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                <p id="senha"></p>
                 <i class="material-symbols-outlined">content_copy</i>
             </div>
             <p id="msg">Clique sobre a caixa para copiar a senha!</p>
         </div>
     </div>    
+    <script src="script.js"></script>
 </body>
 </html>
