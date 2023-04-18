@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            <h1>Gerador de Senhas</h1>
+        </div>
+        <div id="principal">
+            <div id="tamanho">
+                <p><label for="range">Quantidade de Caracteres:</label></p>
+                <p>
+                    <input type="range" name="range" id="range" class="range" step="1" min="1" max="25" value="10" oninput="valor.innerHTML = Number(range.value)">
+                    <output id="valor">10</output>
+                </p>
+            </div>
+            <button>Gerar Senha</button>
+            <div id="resultado">
+                <p id="senha">XXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                <i class="material-symbols-outlined">content_copy</i>
+            </div>
+            <p id="msg">Clique sobre a caixa para copiar a senha!</p>
+        </div>
+    </div>    
+</body>
+</html>
