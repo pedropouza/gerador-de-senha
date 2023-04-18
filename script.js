@@ -24,12 +24,14 @@ botao.addEventListener("click", function() {
   senha.innerHTML = gerarSenha(comprimento);
   resultado.style.display = "flex";
   msg.style.display = "block";
+  msg.innerHTML = "Clique sobre a caixa para copiar a senha!";
+  msg.style.color = "#000";
+  msg.style.fontWeight = "normal";
 });
 
 
 resultado.addEventListener('click', () => {
   const texto = senha.textContent;
-
   navigator.clipboard.writeText(texto)
     .then(() => {
       console.log('Texto copiado com sucesso!');
@@ -37,4 +39,7 @@ resultado.addEventListener('click', () => {
     .catch((error) => {
       console.error('Erro ao copiar texto: ', error);
     });
+  msg.innerHTML = "Senha Copiada!"
+  msg.style.color = "#0d4c50";
+  msg.style.fontWeight = "bold";
 });

@@ -124,7 +124,7 @@ button:hover {
 #resultado i {
     color: white;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.664);
+    background-color: #000000a9;
     height: 100%;
     width: 50px;
     justify-content: center;
