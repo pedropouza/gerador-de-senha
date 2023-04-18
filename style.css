@@ -26,6 +26,7 @@ body {
     height: 275px;
     overflow: hidden;
     box-shadow: 0 0 20px rgb(31, 93, 96);
+    margin: 0 5px;
 }
 
 #title h1 {
@@ -77,6 +78,7 @@ body {
 #tamanho p output {
     position: absolute;
     top: 15px;
+    font-weight: bold;
 }
 
 button {
