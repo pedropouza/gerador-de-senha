@@ -1,5 +1,5 @@
 function gerarCaractereAleatorio() {
-    const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+{}[]|\\:;'<>?,./";
+    const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$*+.";
     const indice = Math.floor(Math.random() * caracteres.length);
     return caracteres.charAt(indice);
 }
@@ -25,3 +25,11 @@ botao.addEventListener("click", function() {
   resultado.style.display = "flex";
   msg.style.display = "block";
 });
+
+
+resultado.addEventListener("click", function() {
+  let textoCopiado = document.getElementById("senha");
+  textoCopiado.select();
+  textoCopiado.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+})

@@ -42,7 +42,7 @@ body {
 }
 
 .range{
-    -webkit-appearance: none;
+    appearance: none;
     margin: 15px 0;
     width: 90%;
     height: 20px;
