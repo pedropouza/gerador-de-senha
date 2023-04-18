@@ -27,9 +27,14 @@ botao.addEventListener("click", function() {
 });
 
 
-resultado.addEventListener("click", function() {
-  let textoCopiado = document.getElementById("senha");
-  textoCopiado.select();
-  textoCopiado.setSelectionRange(0, 99999);
-  document.execCommand("copy");
-})
+resultado.addEventListener('click', () => {
+  const texto = senha.textContent;
+
+  navigator.clipboard.writeText(texto)
+    .then(() => {
+      console.log('Texto copiado com sucesso!');
+    })
+    .catch((error) => {
+      console.error('Erro ao copiar texto: ', error);
+    });
+});
